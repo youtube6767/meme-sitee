@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>💀 SYSTEM ALERT</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #050505;
+      color: #ff3333;
+      font-family: monospace;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 45px;
+    }
+
+    #count {
+      font-size: 100px;
+      font-weight: bold;
+    }
+
+    a {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <h1>⚠️ SYSTEM ALERT ⚠️</h1>
+    <div id="count">3</div>
+    <p id="message">Something suspicious is happening...</p>
+  </main>
+
+  <script>
+    let count = 3;
+
+    const timer = setInterval(() => {
+      count--;
+      document.querySelector("#count").textContent = count;
+
+      if (count === 0) {
+        clearInterval(timer);
+
+        document.querySelector("h1").textContent = "💀 YOU GOT TROLLED";
+        document.querySelector("#count").textContent = "😂";
+        document.querySelector("#message").innerHTML =
+          "LOL GOTCHA 😭<br><br>Nothing happened. You're safe.<br><br>" +
+          '<a href="index.html">← Back to memes</a>';
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
