@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0d0d12;
+  color: #f7f7fb;
+  font-family: system-ui, sans-serif;
+}
+
+header {
+  height: 72px;
+  border-bottom: 1px solid #252531;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  position: sticky;
+  top: 0;
+  background: #0d0d12ee;
+  backdrop-filter: blur(12px);
+}
+
+button,
+.troll a {
+  border: 0;
+  border-radius: 12px;
+  padding: 11px 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+header button {
+  background: white;
+  color: #111;
+}
+
+.hero {
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 6% 45px;
+}
+
+.hero small {
+  color: #9b9bab;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: clamp(48px, 9vw, 92px);
+  line-height: .92;
+  margin: 15px 0 20px;
+  letter-spacing: -4px;
+}
+
+h1 span {
+  color: #a78bfa;
+}
+
+.hero p {
+  color: #aaaabb;
+  font-size: 18px;
+}
+
+input {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #2a2a38;
+  background: #171720;
+  color: white;
+  font-size: 16px;
+}
+
+nav {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 6% 25px;
+  display: flex;
+  gap: 9px;
+  overflow-x: auto;
+}
+
+nav button {
+  background: #191922;
+  color: #bdbdcc;
+  border: 1px solid #2a2a38;
+  white-space: nowrap;
+}
+
+nav button.active {
+  background: #a78bfa;
+  color: #111;
+}
+
+#grid {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 6% 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #171720;
+  border: 1px solid #292936;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.pic {
+  height: 190px;
+  display: grid;
+  place-items: center;
+  font-size: 64px;
+  background: #20202d;
+}
+
+.copy {
+  padding: 17px;
+}
+
+.copy h3 {
+  margin: 0 0 8px;
+}
+
+.copy p {
+  color: #9999aa;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  background: #242431;
+  color: white;
+}
+
+.troll {
+  max-width: 1000px;
+  margin: 0 auto 70px;
+  padding: 30px 6%;
+  background: #171720;
+  border: 1px solid #292936;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.troll a {
+  text-decoration: none;
+  background: #fb7185;
+  color: #111;
+}
+
+footer {
+  text-align: center;
+  color: #666675;
+  padding: 30px;
+  border-top: 1px solid #20202a;
+}
